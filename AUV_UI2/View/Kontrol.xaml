@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="AquaDesk.View.Kontrol"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AquaDesk.View"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:oxy="http://oxyplot.org/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="1688" d:DesignWidth="1298">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <!-- Sol panel: Slider + Gauge -->
+            <ColumnDefinition Width="*"/>
+            <!-- Sağ panel: Grafik vb. -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Sol Panel -->
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10">
+            <!-- İlk Satır (4 adet) -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <!-- Gauge + Slider 1 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge1" From="1000" To="2000" Value="{Binding ElementName=slider1, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider1" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <!-- Gauge + Slider 2 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge2" From="1000" To="2000" Value="{Binding ElementName=slider2, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider2" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <!-- Gauge + Slider 3 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge3" From="1000" To="2000" Value="{Binding ElementName=slider3, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider3" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <!-- Gauge + Slider 4 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge4" From="1000" To="2000" Value="{Binding ElementName=slider4, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider4" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- İkinci Satır (4 adet) -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <!-- Gauge + Slider 5 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge5" From="1000" To="2000" Value="{Binding ElementName=slider5, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider5" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <!-- Gauge + Slider 6 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge6" From="1000" To="2000" Value="{Binding ElementName=slider6, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider6" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <!-- Gauge + Slider 7 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge7" From="1000" To="2000" Value="{Binding ElementName=slider7, Path=Value}"
+                           InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider7" Minimum="1000" Maximum="2000" Value="1500"
+                        TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                        Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <!-- Gauge + Slider 8 -->
+                <StackPanel Width="150" Margin="10" HorizontalAlignment="Center">
+                    <lvc:Gauge x:Name="gauge8" From="1000" To="2000" Value="{Binding ElementName=slider8, Path=Value}"
+                       InnerRadius="60" Width="150" Height="150" Foreground="Wheat" FontSize="16"/>
+                    <Slider x:Name="slider8" Minimum="1000" Maximum="2000" Value="1500"
+                    TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="10"
+                    Width="150" Margin="0,10,0,0"/>
+                </StackPanel>
+                
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Sağ Panel -->
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Grafik 1 -->
+            <oxy:PlotView Grid.Row="0" Grid.Column="0" Model="{Binding MyPlotModel1}" Background="Transparent"/>
+
+            <!-- Grafik 2 -->
+            <oxy:PlotView Grid.Row="0" Grid.Column="1" Model="{Binding MyPlotModel2}" Background="Transparent" />
+
+            <!-- Grafik 3 -->
+            <oxy:PlotView Grid.Row="1" Grid.Column="0" Model="{Binding MyPlotModel3}" Background="Transparent" />
+
+            <!-- Grafik 4 -->
+            <oxy:PlotView Grid.Row="1" Grid.Column="1" Model="{Binding MyPlotModel4}" Background="Transparent" />
+        </Grid>
+    </Grid>
+
+
+</UserControl>
